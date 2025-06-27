@@ -1,2 +1,11 @@
 [functions]
   directory = "server/src/functions"
+
+[build]
+  publish = "webapp/public"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,27 @@
+{
+  "name": "home-keeper-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --outfile=public/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.1.2",
+    "@types/react-dom": "^19.1.6",
+    "esbuild": "^0.25.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^5.2.6",
+    "@mui/icons-material": "^7.1.2",
+    "@types/react-router-dom": "^5.3.3",
+    "react-router-dom": "^7.6.3"
+  }
+}

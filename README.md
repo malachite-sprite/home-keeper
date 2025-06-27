@@ -1,6 +1,13 @@
 # HomeKeeper
 A for-fun on-the-side project that uses entirely free services to make a working progressive web application that helps users keep on top of maintenance tasks needed around their house.
 
+## Setup
+```
+npm install
+npx netlify link
+npm run build
+```
+
 ## Components
 This application is split into four components.
 1. The task and user data is stored on a free-tier instance of MongoDB
@@ -10,6 +17,3 @@ This application is split into four components.
 3. The backend that handles task configuration updates is implemented on another Netlify scheduled function which interacts with the database.
 
 4. The frontend app itself is a react/typescript UI that is hosted on Netlify.
-
-## Deployment
-The MongoDB database and the Netlify components are deployed with terraform
