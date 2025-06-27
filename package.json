@@ -2,7 +2,12 @@
   "scripts": {
     "build": "npm run build:webapp && npm run build:server",
     "build:webapp": "cd webapp && npm run build",
-    "build:server": "cd server && npm run build"
+    "build:server": "cd server && npm run build",
+    "preinstall": "npm run preinstall:webapp && npm run preinstall:server",
+    "preinstall:webapp": "cd webapp && npm install",
+    "preinstall:server": "cd server && npm install",
+    "deploy:dev": "npx netlify deploy",
+    "deploy:prod": "npx netlify deploy --prod"
   },
   "devDependencies": {
     "netlify": "^22.1.4",
